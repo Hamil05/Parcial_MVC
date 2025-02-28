@@ -1,0 +1,13 @@
+﻿@model Parcial_MVC.Models.Dado
+
+@{
+    ViewData["Title"] = "Resultado del Lanzamiento";
+}
+
+<h2>Resultado del Lanzamiento</h2>
+
+<p><strong>Número del Dado:</strong> @Model.NumeroGenerado</p>
+<p><strong>Altura de la caída:</strong> @Model.Altura metros</p>
+<p><strong>Tiempo estimado de caída:</strong> @Model.TiempoCaida segundos</p>
+
+<a href="@Url.Action("Index", "Dado")">Volver</a>

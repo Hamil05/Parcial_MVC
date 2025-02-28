@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Lanzar Dado";
+}
+
+<h2>Calculadora de Caída de un Dado</h2>
+
+<form asp-controller="Dado" asp-action="Calcular" method="post">
+    <label for="altura">Altura de la caída (metros):</label>
+    <input type="number" step="0.1" name="altura" required>
+    <button type="submit">Lanzar Dado</button>
+</form>
